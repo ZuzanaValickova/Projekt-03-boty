@@ -2,9 +2,6 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
-body {
-    text-rendering: optimizeLegibility;
-}
 
 /*
  BARVY
@@ -23,52 +20,113 @@ body {
 /* ----- zde zacni psat vlastni css ----- */
 
 body {
+    text-rendering: optimizeLegibility;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     background-color: #f5f5f5;
     margin: 0;
+    font-size: 14px;
 }
 
 
-h1 {
+.nazev {
     font-weight: 500;
     font-size: 20px;
-    margin-top: 30px;
+    margin: 0;
 }
 
 .zbozi {
     height: 440px;
     width: 670px;
-    padding-left: 200px;
-    padding-top: 70px;
+    margin: 110px auto;
     display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 5px 4px rgb(219, 218, 218);
 
 }
 
 
 .vizual {
-    padding-left: 30px;
-    padding-top: 30px;
-    order: 1;
-    flex-basis: 50%;
-    flex-shrink: 0;
+    padding: 30px;
+    background: linear-gradient(#06d7c1, #50cc49);
+    flex: 1 0 40%;
+    position: relative;
+    color: white;
+    border-radius: 10px 0 0 10px;
 }
 
 .detaily {
-    order: 2;
+    padding: 30px;
     flex-basis: 50%;
     flex-shrink: 0;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 10px;
 }
 
-div.logo {
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(49, 49, 49);
+}
+
+.produkt {
+    color: grey;
+}
+
+.popis {
+    color: rgb(49, 49, 49);
+    padding-bottom: 30px;
+    border-bottom: 1px groove #06d7c1;
+}
+
+.parametr {
     margin-top: 30px;
-    margin-bottom: 30px;
-
+    font-size: 15px;
+    color: rgb(49, 49, 49);
 }
 
-div.bota {
-   
+.velikosti {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
 
+.akce {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    background-color: rgb(255, 111, 0);
+    padding: 10px 20px;
+    border-radius: 5%;
+    box-shadow: 0px 1px 2px rgb(145, 145, 145);
+}
+
+.tlacitko {
+    text-decoration: none;
+    color: white;
+}
+
+
+.bota {
+   position: absolute;
+   left: -70px;
+   bottom: 10px;
+}
+
+.cenovka {
+    position: absolute;
+    text-align: right;
+    bottom: 30px;
+    right: 30px;
+}
+
+.cena {
+    font-size: 22px;
+}
+
+.slogan {
+    margin-top: 30px;
 }
 
 ul.velikosti {
